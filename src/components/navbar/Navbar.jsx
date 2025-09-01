@@ -3,6 +3,7 @@
 import { COLORS } from "@/style/colors";
 import Link from "next/link";
 import React from "react";
+import DarkModeToggle from "../darkModeToggle/DarkModeToggle";
 
 const links = [
     {
@@ -46,8 +47,10 @@ const Navbar = () => {
             >
                 Home Page
             </Link>
+
             
             <div className="flex items-center gap-6">
+                <DarkModeToggle />
                 {links.map(link =>(
                     <Link 
                         className=""
