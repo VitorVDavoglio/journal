@@ -18,7 +18,7 @@ const links = [
     {
         id: 3,
         title: "Blog",
-        url: "blog",
+        url: "/blog",
     },
     {
         id: 4,
@@ -58,7 +58,7 @@ const Navbar = () => {
                     </Link> 
                 ))}
                 <button 
-                    className="p-0 cursor-pointer rounded-2xl"
+                    className="p-2 cursor-pointer rounded-2xl"
                     style={{backgroundColor: COLORS.bg_logout_navbar}}
                     onClick={() => {
                         console.log("logged out");
